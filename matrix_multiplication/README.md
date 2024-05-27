@@ -4,7 +4,7 @@ Matrix multiplication is one of the most trivial operations used in Data Science
 The Strassen's algorithm employs divide and conquer method to compute the product of two matrices. Each matrix is divided into sub-matrices and these sub-matrices are used to compute intermediate results using a sequence of operations (This sequence of operations involves computing 7 multiplication steps and a few addition and subtraction steps). The final results is then computed by combining all these intermediate results as shown below. 
 
 
-A = [[A11, A12], [A21, A22]]  
+A = [[A11, A12], [A21, A22]] Note - A11 is the upper left sub-matrix of size (n/2)*(n/2), and similarly others.
 B = [[B11, B12], [B21, B22]]  
 
 P1 = (A11 + A22)(B11 + B22)  
