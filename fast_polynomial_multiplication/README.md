@@ -1,6 +1,6 @@
 # Fast Polynomial Multiplication
 
-Given two polynomial `A(x)` and `B(x)` of degree `n-1` (assuming degree of both `A` and `B` is same), the algorithm uses divide and conquer approach to perform multiplication of the polynomaials. The naive implementation is pretty straight forward and computes the result in result in `O(n^2)`.
+Given two polynomial `A(x)` and `B(x)` of degree `n-1` (assuming degree of both `A` and `B` is same and **n is a power of 2**), the algorithm uses divide and conquer approach to perform multiplication of the polynomaials. The naive implementation is pretty straight forward and computes the result in result in `O(n^2)`.
 
 ## Algorithm
 * Input: Coeffcient representation of `A(x)` and `B(x)`.
