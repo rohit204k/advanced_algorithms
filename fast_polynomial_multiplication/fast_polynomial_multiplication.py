@@ -1,6 +1,7 @@
 import cmath
 import numpy as np
 
+    
 def nth_roots_of_unity(n, tolerance=1e-10):
     roots = []
     for k in range(n):
@@ -87,14 +88,13 @@ def multiply(A, B):
     # degree = n - 1
     n = len(A)
 
-    for i in range(n):
+    for _ in range(n):
         A.append(0)
         B.append(0)
 
     pvr_a = fft(A)
     pvr_b = fft(B)
-    
-    pvr_c = [pvr_a[i]*pvr_b[i] for i in range(len(pvr_a))]
+    pvr_c = [pvr_a[i] * pvr_b[i] for i in range(len(pvr_a))]
 
     c = point_to_coefficients(pvr_c)
 
@@ -111,7 +111,6 @@ class polynomial():
         terms = []
     
         for i, coef in enumerate(self.coefficients):
-            coef = int(coef)
             if coef == 0:
                 continue
             
@@ -142,8 +141,8 @@ class polynomial():
         return polynomial
 
 def main():
-    A = polynomial([1,2])
-    B = polynomial([4,4])
+    A = polynomial([1, 2])
+    B = polynomial([4, 4])
 
     print('A :', A)
     print('B :', B)
@@ -155,4 +154,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
