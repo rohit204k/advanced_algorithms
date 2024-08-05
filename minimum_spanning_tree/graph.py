@@ -1,4 +1,4 @@
-class Graph():
+class Graph:
     def __init__(self, vertices, edges, weights=None) -> None:
         self.v = vertices
         self.e = {}

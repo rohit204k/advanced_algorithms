@@ -6,13 +6,13 @@ def prims(g: G):
 
     edges = sorted(g.e.items(), key=lambda item: item[1])
 
-    mst_edges = []
+    mst_edges = set()
 
     S.add(g.v[0])
     while S!=V:
         for edge, weight in edges:
             if edge[0] in S and edge[1] not in S:
-                mst_edges.append(edge)
+                mst_edges.add(edge)
                 S.add(edge[1])
     
     return mst_edges
