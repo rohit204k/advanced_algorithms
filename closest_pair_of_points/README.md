@@ -9,7 +9,7 @@ Given a list `points` consisting of `n` points in the `x-y` plane, such that no 
 4. Now we need to consider the case, where two points might be located on different halves. All such pairs of points must be enclosed with the range `x = m - d` and `x = m + d`. Filter out such points, otherwise distance between such points will be greater than `d`. Refer below image (Taken from Prof. Andrew McGregor's COMPSCI-611 lecture slides). Use `y_sorted_point` for filtering.
 
 <div style="text-align: center;">
-<img src="images/step_4.png" alt="Algo step 4" width="400" height = "300" />
+    <img src="images/step_4.png" alt="Algo step 4" width="400" height = "300" />
 </div>
 
 5. Claim - for any point `p`, it is sufficient to compare it with 6 other points within `d` distance to cover all points. For detailed explanation, refer [Prof. Andrew McGregor's lecture slides](https://people.cs.umass.edu/~mcgregor/611S24/lec02.pdf).
