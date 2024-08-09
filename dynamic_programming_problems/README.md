@@ -18,4 +18,18 @@ Floyd-Warshall algorithm is a graph analysis algorithm used to find the shortest
 
 
 ### Time Complexity
-* The construction of the dynamic programming table requires three loops which is done in `O(n^3)` steps. Hence the time complexity is `O(n^3)`
+* The construction of the dynamic programming table requires three loops which is done in `O(n^3)` steps. Hence the time complexity is `O(n^3)`.
+
+## Djikstras Algorithm
+
+Djikstras algorithm is a graph analysis algorithm used to find the shortest paths between the sources and all the other vertices. 
+
+<div style="text-align: center;">
+    <figure>
+        <img src="images/graph_example_2.png" alt="Sample Graph 2" width="400" height = "300" />
+        <figcaption>Sample Graph 2.</figcaption>
+    </figure>
+</div>
+
+### Time Complexity
+* The construction of the dynamic programming table requires two loops which is done in `O(n^2)` steps. Hence the time complexity is `O(n^2)`.
