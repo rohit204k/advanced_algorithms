@@ -1,3 +1,9 @@
+# Graph Class
+# vertices: list of vertices (vertices are numbered from 1 and onwards.)
+# edges: list of edges (each edge is a tuple of form (s,v), ex: (1,2))
+# weights: list of weights in order pass in edges, defaults to None, which is 1 for all edges
+# directed: True for directed graphs, False otherwise.
+
 class Graph:
     def __init__(self, vertices, edges, weights=None, directed=False) -> None:
         self.v = vertices
