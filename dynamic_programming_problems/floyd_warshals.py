@@ -1,4 +1,9 @@
-from graph import Graph as G
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data_structures.graph import Graph as G
+
+# from graph import Graph as G
 
 
 def floyd_warshal(g: G):
