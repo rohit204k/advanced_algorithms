@@ -23,15 +23,20 @@ class Graph:
             if not directed:
                 self.adjacency_matrix[v - 1][u - 1] = weight
 
+    def format_matrix_row(self, array, width = 3):
+        return [
+            f"{'inf' if val == float('inf') else int(val):>{width}}" for val in array
+        ]
+
     def __str__(self):
 
-        matrix_str = "  " + " ".join(map(str, self.v)) + "\n"
+        matrix_str = "  " + " ".join(map(str, self.format_matrix_row(self.v))) + "\n"
 
         for i in range(len(self.v)):
             matrix_str += (
                 str(self.v[i])
                 + " "
-                + " ".join(map(str, self.adjacency_matrix[i]))
+                + " ".join(map(str, self.format_matrix_row(self.adjacency_matrix[i])))
                 + "\n"
             )
 
@@ -74,7 +79,7 @@ class BipartiteGraph:
             adj_list[u].append(v)
             # adj_list[v].append(u)  # if the graph is undirected
         return adj_list
-
+    
     def __str__(self):
         matrix_str = "  " + " ".join(map(str, self.V)) + "\n"
 
