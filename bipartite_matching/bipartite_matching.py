@@ -1,4 +1,8 @@
-from bipartite_graph import BipartiteGraph as BG
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data_structures.graph import BipartiteGraph as BG
+
 from collections import deque
 
 NIL = None

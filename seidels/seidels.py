@@ -1,6 +1,9 @@
-import numpy as np
-from graph import Graph as G
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data_structures.graph import Graph as G
 
+import numpy as np
 
 def format_matrix(array, g: G):
 
