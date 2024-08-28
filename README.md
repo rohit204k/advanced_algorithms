@@ -8,6 +8,6 @@ Algorithms studied in COMPSCI-611
 * Fast polynomial mulitplication of 2 `n-1` degree polynomials.
 * Constructing minimum spanning tree using Greedy Approach (Kruskals and Prims).
 * Finding maximum matching for a given bipartite graph.
-* Dynamic Programming (Knapsack, Floyd-Warshals, Djikstras)
-* Seidels Algorithm
-
+* Dynamic Programming (Knapsack, Floyd-Warshals, Djikstras).
+* Seidels Algorithm.
+* Ford-Fulkerson's algorithm to find maximum network flow.
