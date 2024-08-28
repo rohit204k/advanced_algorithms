@@ -6,6 +6,15 @@ from data_structures.graph import Graph as G
 # from graph import Graph as G
 
 def argmin(d: list, R: set):
+    """Return the closed vertex in 'd' which is not already in R.
+
+    Args:
+        d (list): List of distances from source
+        R (set): Set of processed nodes.
+
+    Returns:
+        int: Closed vertex which is not in R.
+    """
     min_vertex = None
     min_distance = float('inf')
     for vertex, distance in enumerate(d):
