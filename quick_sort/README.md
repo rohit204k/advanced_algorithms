@@ -3,7 +3,9 @@ Quick sort algorithm is a sorting algorithm that sorts an array by recursively c
 
 ## Time Complexity
 
-* Probability the `i-th` smallest element is compared the `j-th` smallest element of an array is equal to `2/(j - i + 1)`, where `i < j`.
-* Let Z_ij = 1 if the 
-* The time complexity can be derived using the Master's theorem where a=2, b=2, and α = 1.
-* Time complexity, `T(n) = nlog(n)`
+* Probability the `i`<sup>th</sup> smallest element is compared the `j`<sup>th</sup> smallest element of an array is equal to `2/(j - i + 1)`, where `i < j`.
+* Let Z<sub>ij</sub> = 1 if the `i`<sup>th</sup> smallest element is compared the `j`<sup>th</sup> smallest element.
+* Total number of comparisons is ∑<sub> 1 <= i < j <= n </sub>Z<sub>ij</sub>.
+* Expected number of comparisons is E[∑<sub> 1 <= i < j <= n </sub>Z<sub>ij</sub>] = ∑<sup>n</sup><sub>j=2</sub> ∑<sup>j</sup><sub>k=2</sub> 2/k.
+* The above term is simplified to `O(nlogn)`. For detailed explanation, refer [Prof. Andrew McGregor's lecture slides](https://people.cs.umass.edu/~mcgregor/611S24/lec13.pdf).
+* Time complexity, `T(n) = nlog(n)`.
