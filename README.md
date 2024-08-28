@@ -11,3 +11,4 @@ Algorithms studied in COMPSCI-611
 * Dynamic Programming (Knapsack, Floyd-Warshals, Djikstras).
 * Seidels Algorithm.
 * Ford-Fulkerson's algorithm to find maximum network flow.
+* Quick Sort.
