@@ -12,4 +12,5 @@ Algorithms studied in COMPSCI-611
 * Seidels Algorithm.
 * Ford-Fulkerson's algorithm to find maximum network flow.
 * Quick Sort.
-* Karger's Min Cut algorithm
+* Karger's Min Cut algorithm.
+* Lazy Select algorithm to find the k-th smallest element in a set pf elements.
